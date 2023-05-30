@@ -5,10 +5,17 @@
         <meta http-equiv="X-UA-compatible" content="IE=edge"/>
         <meta name="viewport" content="with=device-width, initial-scale=1.0"/>
         <title> Encripatador </title>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="shortcut icon" href="img/icon.png" type="image/x-icon"/>
+        <link rel="stylesheet" href="styles.css"/>
+        <link rel="stylesheet" href="reset.css"/>
         
     </head>
     <body>
+        <header>
+           <div class="encabezado">
+            <h1 > Encripatador </h1>
+           </div>
+        </header>
         <div class="container">
             <div class="encriptar">
                 <textarea 
@@ -17,26 +24,29 @@
                    id="texto"
                    cols="30"
                    rows="10"
-                   placeholder="Escriba aquí su texto.">
-                </textarea>
+                   placeholder="Escriba su texto aquí ."></textarea>
             </div>
             <div class="terminos">
                 <p> Solo letras minúsculas y sin acentos</p>
             </div>
             <div class="botones">
                 <button class="btn-encriptar" type="button" onclick="encriptar()"> Encriptar</button>
-                <button class="btn-desencriptador" type="button" value="Desencriptar" onclick="desencripar()">Desencriptar</button>
+                <button class="btn-desencriptador" type="button" onclick="desencripar()">Desencriptar</button>
             </div>
          
           <div class="encriptado">
-              <img src="" alt="" id="picture">
+              <img src="img/imagen.png" alt="" id="picture">
              <div    class="mensaje-encriptado" id="mensaje-encriptado">
-                  <h2 id="titulo-mensaje"> Ningun Mensaje encontrado. </h2>
+                  <h2 id="titulo-mensaje"> Ningún Mensaje fue encontrado. </h2>
                   <p id="parrafo"> Escriba el texto a Encriptar o Desencriptar. </p>
-                 <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="mensaje"></textarea>
+                <!-- <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="mensaje"></textarea> -->
               </div>
           </div>  
         </div>
+
+        <footer>
+            <p class="Copyright"> &copy Copyright Dmramírez</p>
+        </footer>
         
     </body>
     <script src="index.js"></script>
